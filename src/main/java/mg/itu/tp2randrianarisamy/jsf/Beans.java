@@ -13,10 +13,12 @@ import javax.enterprise.context.RequestScoped;
  *
  * @author jolivot
  */
-@Named(value = "bean")
+@Named(value = "beans")
 @RequestScoped
-public class Bean {
-private int nombre;
+public class Beans {
+
+    
+    private int nombre;
 
     public int getNombre() {
         return nombre;
@@ -35,12 +37,14 @@ private int nombre;
         return l;
     }
     public String afficher() {
-        return "affichage_3?nb="+ nombre + "&amp;faces-redirect=true";
+        return "affichage_4?nb="+ nombre + "&amp;faces-redirect=true";
     }
     /**
-     * Creates a new instance of Bean
+     * Creates a new instance of Beans
      */
-    public Bean() {
+    
+    
+    public Beans() {
     }
     
 }
